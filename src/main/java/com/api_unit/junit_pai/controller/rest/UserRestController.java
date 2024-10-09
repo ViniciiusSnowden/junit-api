@@ -18,8 +18,8 @@ public class UserRestController {
     private UserService userService;
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<User> findById(@PathVariable Integer id){
-      return ResponseEntity.ok().body(userService.findById(id.longValue()));
+    public ResponseEntity<User> findById(@PathVariable Long id){
+      return ResponseEntity.ok().body(userService.findById(id));
     };
 
 
