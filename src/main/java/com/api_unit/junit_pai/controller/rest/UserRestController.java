@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+
 @RestController
 @RequestMapping(value = "/user")
 public class UserRestController {
@@ -18,9 +20,15 @@ public class UserRestController {
     private UserService userService;
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id){
+    public ResponseEntity<User> findById(@PathVariable Integer id){
       return ResponseEntity.ok().body(userService.findById(id));
     };
+
+    @GetMapping(value = "/")
+    public ResponseEntity<ArrayList<User>> findAll(){
+       return ResponseEntity.ok().body(userService.findAll());
+    }
+
 
 
 
