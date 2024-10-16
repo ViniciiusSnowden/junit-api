@@ -1,4 +1,4 @@
-package com.api_unit.junit_pai.resources.exceptions;
+package com.api_unit.junit_pai.controller.rest.exceptions;
 
 
 
