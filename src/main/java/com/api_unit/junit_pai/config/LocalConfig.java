@@ -1,7 +1,7 @@
 package com.api_unit.junit_pai.config;
 
 import com.api_unit.junit_pai.domain.User;
-import com.api_unit.junit_pai.repositores.UserRepository;
+import com.api_unit.junit_pai.services.repositores.UserRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.api_unit.junit_pai.repositores;
+package com.api_unit.junit_pai.services.repositores;
 
 import com.api_unit.junit_pai.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
